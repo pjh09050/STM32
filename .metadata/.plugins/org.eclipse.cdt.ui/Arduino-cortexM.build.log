@@ -1,0 +1,10 @@
+18:53:18 **** Incremental Build of configuration Debug for project Arduino-cortexM ****
+make -j12 all 
+arm-none-eabi-size   Arduino-cortexM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6516	     20	   1572	   8108	   1fac	Arduino-cortexM.elf
+Finished building: default.size.stdout
+ 
+
+18:53:19 Build Finished. 0 errors, 0 warnings. (took 967ms)
+

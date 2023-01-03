@@ -1,0 +1,10 @@
+15:47:09 **** Incremental Build of configuration Debug for project LwIP_TCP_Server_2022_1009 ****
+make -j12 all 
+arm-none-eabi-size   LwIP_TCP_Server_2022_1009.elf 
+   text	   data	    bss	    dec	    hex	filename
+  77712	    152	  35216	 113080	  1b9b8	LwIP_TCP_Server_2022_1009.elf
+Finished building: default.size.stdout
+ 
+
+15:47:10 Build Finished. 0 errors, 0 warnings. (took 1s.344ms)
+

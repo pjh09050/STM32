@@ -1,0 +1,82 @@
+Configuration	UART_BL
+STM32CubeMX 	6.3.0
+Date	11/10/2021
+MCU	STM32F429ZITx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+UART4	Asynchronous	UART4_RX	PC11
+UART4	Asynchronous	UART4_TX	PC10
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+56	PG0	GPIO_EXTI0	
+57	PG1	GPIO_EXTI1	
+77	PD8*	USART3_TX	
+78	PD9*	USART3_RX	
+87	PG2	GPIO_EXTI2	
+88	PG3	GPIO_EXTI3	
+111	PC10	UART4_TX	
+112	PC11	UART4_RX	
+114	PD0	GPIO_Output	
+115	PD1	GPIO_Output	
+116	PD2	GPIO_Output	
+117	PD3	GPIO_Output	
+118	PD4	GPIO_Output	
+119	PD5	GPIO_Output	
+122	PD6	GPIO_Output	
+123	PD7	GPIO_Output	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+UART4	Asynchronous	UART4_RX	PC11
+UART4	Asynchronous	UART4_TX	PC10
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+56	PG0	GPIO_EXTI0	
+57	PG1	GPIO_EXTI1	
+77	PD8*	USART3_TX	
+78	PD9*	USART3_RX	
+87	PG2	GPIO_EXTI2	
+88	PG3	GPIO_EXTI3	
+111	PC10	UART4_TX	
+112	PC11	UART4_RX	
+114	PD0	GPIO_Output	
+115	PD1	GPIO_Output	
+116	PD2	GPIO_Output	
+117	PD3	GPIO_Output	
+118	PD4	GPIO_Output	
+119	PD5	GPIO_Output	
+122	PD6	GPIO_Output	
+123	PD7	GPIO_Output	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : UART_BL
+Project Folder : C:\Users\DHCHA\STM32CubeIDE\workspace_1.7.0\UART_BL
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_F4 V1.26.2
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

@@ -1,0 +1,16 @@
+18:15:52 **** Build of configuration Debug for project UART_BL2 ****
+make -j12 all 
+arm-none-eabi-gcc -o "UART_BL2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pjh09\STM32CubeIDE\workspace_1.10.1\UART_BL2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_BL2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_BL2.elf
+ 
+arm-none-eabi-size   UART_BL2.elf 
+arm-none-eabi-objdump -h -S  UART_BL2.elf  > "UART_BL2.list"
+   text	   data	    bss	    dec	    hex	filename
+  11700	     84	   1644	  13428	   3474	UART_BL2.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_BL2.list
+ 
+
+18:15:53 Build Finished. 0 errors, 0 warnings. (took 1s.767ms)
+

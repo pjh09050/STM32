@@ -1,0 +1,64 @@
+22:35:44 **** Incremental Build of configuration Debug for project Arduino-cortexM1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  117 |      if(strcmp(RxBuffer_UART4, "1") == 0){
+      |         ^~~~~~
+../Core/Src/main.c:117:16: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  117 |      if(strcmp(RxBuffer_UART4, "1") == 0){
+      |                ^~~~~~~~~~~~~~
+      |                |
+      |                uint8_t * {aka unsigned char *}
+../Core/Src/main.c:117:16: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:132:16: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  132 |      if(strcmp(RxBuffer_UART4, "2") == 0){
+      |                ^~~~~~~~~~~~~~
+      |                |
+      |                uint8_t * {aka unsigned char *}
+../Core/Src/main.c:132:16: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+../Core/Src/main.c:144:16: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+  144 |      if(strcmp(RxBuffer_UART4, "0") == 0)HAL_GPIO_WritePin(GPIO_LED, LED_ALL, GPIO_PIN_RESET);
+      |                ^~~~~~~~~~~~~~
+      |                |
+      |                uint8_t * {aka unsigned char *}
+../Core/Src/main.c:144:16: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+arm-none-eabi-gcc -o "Arduino-cortexM1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pjh09\STM32CubeIDE\workspace_1.10.1\Arduino-cortexM1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Arduino-cortexM1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Arduino-cortexM1.elf
+ 
+arm-none-eabi-size   Arduino-cortexM1.elf 
+arm-none-eabi-objdump -h -S  Arduino-cortexM1.elf  > "Arduino-cortexM1.list"
+   text	   data	    bss	    dec	    hex	filename
+  11840	     44	   1652	  13536	   34e0	Arduino-cortexM1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Arduino-cortexM1.list
+ 
+22:35:48 **** Incremental Build of configuration Debug for project Arduino-cortexM1 ****
+make -j12 all 
+arm-none-eabi-size   Arduino-cortexM1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11840	     44	   1652	  13536	   34e0	Arduino-cortexM1.elf
+Finished building: default.size.stdout
+ 
+22:36:07 **** Incremental Build of configuration Debug for project Arduino-cortexM1 ****
+make -j12 all 
+arm-none-eabi-size   Arduino-cortexM1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11840	     44	   1652	  13536	   34e0	Arduino-cortexM1.elf
+Finished building: default.size.stdout
+ 
+22:50:43 **** Incremental Build of configuration Debug for project Arduino-cortexM1 ****
+make -j12 all 
+arm-none-eabi-size   Arduino-cortexM1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11840	     44	   1652	  13536	   34e0	Arduino-cortexM1.elf
+Finished building: default.size.stdout
+ 
+09:57:11 **** Incremental Build of configuration Debug for project Arduino-cortexM1 ****
+make -j12 all 
+arm-none-eabi-size   Arduino-cortexM1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11840	     44	   1652	  13536	   34e0	Arduino-cortexM1.elf
+Finished building: default.size.stdout
+ 

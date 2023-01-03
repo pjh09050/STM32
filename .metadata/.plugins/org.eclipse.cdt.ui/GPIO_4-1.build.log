@@ -1,0 +1,34 @@
+21:39:33 **** Build of configuration Debug for project GPIO_4-1 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: error: expected 'while' before '}' token
+  102 |   }
+      |   ^
+../Core/Src/main.c:152:13: error: invalid storage class for function 'MX_GPIO_Init'
+  152 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:204:1: error: expected declaration or statement at end of input
+  204 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:49:13: warning: 'MX_GPIO_Init' used but never defined
+   49 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:195:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  195 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:183:6: warning: 'LED_OnOff' defined but not used [-Wunused-function]
+  183 | void LED_OnOff(int led, int interval)
+      |      ^~~~~~~~~
+../Core/Src/main.c:152:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  152 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:110:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  110 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+21:39:33 Build Failed. 4 errors, 5 warnings. (took 429ms)
+
